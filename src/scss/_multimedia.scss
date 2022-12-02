@@ -1,0 +1,41 @@
+.multimedia{
+    margin-top: 50px;
+    width: 80%;
+    background-color: white; 
+    box-shadow: 0px 0px 15px rgba(119, 118, 118, 0.315);
+    -webkit-box-shadow: 0px 0px 20px 6px rgba(2, 2, 2, 0.27); 
+    box-shadow: 0px 0px 20px 6px rgba(204, 204, 204, 0.308);
+    padding:20px 0px 10px 0px;
+    display: grid;
+    font-family: raleway;
+    color: rgb(20, 68, 107);
+    grid-template-columns: repeat(4, 265px);
+    grid-template-rows: repeat(4, 1fx);
+    grid-template-areas:"entrevista1     entrevista1      entrevista4       entrevista4"
+                        "entrevista1     entrevista1      entrevista4       entrevista4"
+                        "entrevista2     entrevista2      entrevista3       entrevista3"
+                        "entrevista5     entrevista5      entrevista5       entrevista5";                     
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;   
+}
+@media(max-width:1300px){
+    .multimedia{    
+    grid-template-columns: repeat(2, 265px);
+    grid-template-rows: repeat(5, 1fx);
+    grid-template-areas:"entrevista1     entrevista1"                  
+                        "entrevista4     entrevista4"             
+                        "entrevista2     entrevista2"
+                        "entrevista3     entrevista3"
+                        "entrevista5     entrevista5";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;   
+}
+    .entrevista1 , .entrevista4{
+        padding: 10px;
+    }
+}

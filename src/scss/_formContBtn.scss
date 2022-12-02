@@ -1,0 +1,33 @@
+.formCt button{
+    font-family: raleway;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 0px 10px;
+    height: 40px;
+    width: 160px;
+    overflow: hidden;
+    border: none;
+    transition: 1s 0.3s;
+    background-image: linear-gradient(45deg, #dab8b2 0%, rgb(148, 101, 146) 45%, rgb(218,184,178) 100%);
+}
+.formCt button:hover{
+    width: 400px;
+    color: #14446b;
+    transition: 1s;
+    background-image: linear-gradient(45deg, #dab8b2 0%, rgb(148, 101, 146) 45%, rgb(218,184,178) 100%);    
+}
+.formCt button .fa-paper-plane:nth-child(1){
+    @include btnContPlane (0px)
+}
+.formCt button:hover .fa-paper-plane:nth-child(1){
+    @include btnContPlaneHover (-120px)
+}
+
+.formCt button .fa-paper-plane:nth-child(2){
+    @include btnContPlane (0px)
+}
+.formCt button:hover .fa-paper-plane:nth-child(2){
+    @include btnContPlaneHover (120px)
+}

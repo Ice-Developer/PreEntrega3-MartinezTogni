@@ -1,0 +1,19 @@
+.entrevista1{
+    grid-area: entrevista1;
+    @extend %entrevistaVideo;
+}
+.reproductor1{
+    @extend %reproductor;
+}
+.reproductor1 div img:hover{
+    @extend %repDivImgHover;
+}
+.reproductor1 iframe{
+    @extend %repIfram;
+}
+.reproductor1 div {
+    @extend %repDiv;
+}
+.reproductor1 div img {
+    @extend %repDivImg;
+}

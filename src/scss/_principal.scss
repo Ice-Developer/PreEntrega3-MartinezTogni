@@ -1,0 +1,15 @@
+.principal{
+    background: -moz-linear-gradient(45deg, rgb(218,184,178) 0%, rgb(20, 68, 107) 45%, rgb(218,184,178) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(218,184,178) 0%, rgb(20, 68, 107) 45%, rgb(218,184,178) 100%);
+    background: linear-gradient(45deg, rgb(218,184,178) 0%, rgb(20, 68, 107) 45%, rgb(218,184,178) 100%);
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+}

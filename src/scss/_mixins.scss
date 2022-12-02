@@ -1,0 +1,39 @@
+@mixin btnYTPrp ($pad, $mar){
+    padding: $pad;
+    margin: $mar;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+@mixin btnYTPrp_a ($pad, $mar) {
+    padding: $pad;
+    margin: $mar;
+    text-decoration: none;
+    color: white;
+} 
+
+@mixin inputCont ($altura, $marInf){
+    height: $altura;
+    margin-bottom: $marInf;
+    width:400px;
+    font-family: raleway;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+@mixin btnContPlane ($translX) {
+    padding: 10px;
+    padding-right: 0;
+    color: transparent;
+    transform: translatex($translX);
+    transition-duration: 1s;
+}
+@mixin btnContPlaneHover ($translX) {
+    transform: translatex($translX);
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    color: #14446b;
+}

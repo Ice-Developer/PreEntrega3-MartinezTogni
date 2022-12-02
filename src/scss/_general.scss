@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+body{
+    display: grid;
+    grid-template-rows: repeat(4fr auto);
+    grid-template-areas:"nav"
+                        "header"
+                        "main"
+                        "footer";
+
+}
+nav{
+    grid-area: nav;
+    display: flex;
+    
+}
+header{
+    grid-area: header;
+    display: flex;
+}
+main{
+    grid-area: main;
+    display: flex;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+}

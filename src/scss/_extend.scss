@@ -1,0 +1,42 @@
+%entrevistaVideo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 350px;
+}
+%entrevistaAudio{
+    display: flex;
+    margin: 10px;
+    width:456px;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+%reproductor{
+    width: 500px;
+    height: 350px;
+    position: relative;
+    border: #14446b solid 2px;
+    border-radius: 5%;
+    overflow: hidden;
+}
+%repDivImgHover{
+    transform:scale(1.2);
+    transition:linear;
+    transition-duration: 0.5s;   
+}
+%repIfram{
+    width: inherit;
+    height: inherit;
+}
+%repDiv{
+    width: inherit;
+    height: inherit;
+}
+%repDivImg{
+    width: inherit;
+    height: inherit;
+}
+

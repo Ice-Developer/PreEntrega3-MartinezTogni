@@ -1,0 +1,57 @@
+.pgt p{
+    font-family: raleway;
+    color: white;
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    font-family: raleway;
+    color: white;
+    margin-bottom: 50px; 
+}
+@media (max-width:1300px) {
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+}
+
+.tarjeta1, .tarjeta2, .tarjeta3{
+    width: 320px;
+    height: 350px;
+    border: 2px solid white;
+    border-radius: 5%;
+    padding: 20px;
+    text-align: left;
+    align-content: center;
+}
+.tarjeta1 p:nth-child(1){
+    font-size: 700%;
+    padding: 0px 0px 20px 20px;
+}
+.tarjeta1 p strong{
+    font-size: 150%;
+}
+.tarjeta2 p:nth-child(1){
+    font-size: 700%;
+    padding: 0px 0px 20px 20px;
+}
+.tarjeta2 p strong{
+    font-size: 150%;
+}
+.tarjeta3 p:nth-child(1){
+    font-size: 630%;
+    padding: 0px 0px 20px 20px;
+}
+.tarjeta3 p strong{
+    font-size: 150%;
+}
