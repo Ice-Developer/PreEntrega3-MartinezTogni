@@ -1,19 +1,15 @@
 .entrevista4{
     grid-area: entrevista4;
     @extend %entrevistaVideo;
-}
-.reproductor4{
-    @extend %reproductor;
-}
-.reproductor4 div img:hover{
-    @extend %repDivImgHover;
-}
-.reproductor4 iframe{
-    @extend %repIfram;
-}
-.reproductor4 div {
-    @extend %repDiv;
-}
-.reproductor4 div img {
-    @extend %repDivImg;
+    .reproductor4{
+        @extend %reproductor;
+        img{
+            &:hover{
+                @extend %repDivImgHover;
+            }
+        }
+        iframe{
+            @extend %repIfram;
+        }
+    }
 }

@@ -26,7 +26,7 @@
 </nav>
     <header></header>
     <main>
-        <div class="ppalCot">
+      <div class="ppalCot">
         <div class="sldCot" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
             <h2>Cotiza tu Seguro de viaje</h2>
             <p >Completa el formulario y accederas a mis mejores propuestas</p>
@@ -55,113 +55,79 @@
             </div>
           </div>
         </div>
-            <div class="card bg-transparent shadow-none border-0 w-50 ">
-              <div class="container m-0 p-0" w-100>
-                  <div class="row m-0 p-0">
-                          <div class="card m-0 p-0 row shadow-lg justify-content-center align-items-center bg-transparent shadow-none border-0 ">
-                              <div class="card-body m-0 p-0">
-                                  <form action="" >
-                                      <div class="form-group ">
-                                          <div class="form-group p-2">
-                                              <input type="email" class="form-control" placeholder="Email:">
-                                          </div>
-                                          <div class="form-group p-2">
-                                              <input type="text" class="form-control" placeholder="Nombre completo:">
-                                          </div>
-                                          <div class="form-group p-2">
-                                            
-                                            <input type="text"  class="form-control"  placeholder="Nacionalidad:">
-                                        </div>
-                                          <div class="form-group p-2" >
-                                            <label for="nacimiento" class="form-control p-0" style="background-color: transparent; border: none; color: white;">Fecha de nacimiento</label>
-                                            <input type="date" id="nacimiento" class="form-control" placeholder="fecha de nacimiento:">
-                                        </div>
-                                          <div class="form-group p-2">
-                                              <input type="text" class="form-control" placeholder="Edad cumplida:">
-                                          </div>
-                                          <div class="form-group p-2">
-                                              <input type="text" class="form-control" placeholder="Teléfono de contacto (con código de área y país):">
-                                          </div>
-                                          <div class="form-group p-2">
-                                            <label for="fechaini" class="form-control p-0" style="background-color: transparent; border: none; color: white;">Fecha de inicio del viaje</label>
-                                            <input type="date" id="fechaini" class="form-control" placeholder="Fecha inicio del viaje:">
-                                        </div>
-                                        <div class="form-group p-2">
-                                          <label for="fechafin" class="form-control p-0" style="background-color: transparent; border: none; color: white;">Fecha de finalización del viaje</label>
-                                          <input type="date" id="fechafin" class="form-control" placeholder="Fecha de finalizacion del viaje:">
-                                      </div>
-                                      <div class="form-group p-2">
-                                      <select class="form-select" aria-label="Default select example">
-                                        <option selected >Que región o país visitará?</option>
-                                        <option value="1">Europa</option>
-                                        <option value="2">America del Norte</option>
-                                        <option value="3">America del Sur</option>
-                                        <option value="4">Asia / Africa / Oceania</option>
-                                        <option value="5">Caribe</option>
-                                        <option value="6">Turismo Interno(Solo para pasajeros argentinos)</option>
-                                      </select>
-                                    </div>
-                                    <div class="form-group p-2">
-                                      <select class="form-select p-2" aria-label="Default select example">
-                                        <option selected>Que tipo de viaje realizará?</option>
-                                        <option value="1">Visa Estudiantil</option>
-                                        <option value="2">Visa Work and Holiday</option>
-                                        <option value="3">Vacaciones (menos de 90 días)</option>
-                                        <option value="4">Vacaiones (menos de 30 días)</option>
-                                        <option value="5">Expatriación (Radicación definitiva fuera de su país de origen)</option>
-                                      </select>
-                                    </div>
-                                    <div class="form-group m-2 p-2 bg-white rounded-2 text-dark">
-                                      <h5>Situación actual?</h5>
-                                    <div class="form-check">
-                                      <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                      <label class="form-check-label" for="flexRadioDefault1">
-                                        Viajo desde mi país de origen
-                                      </label>
-                                    </div>
-                                    <div class="form-check ">
-                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                      <label class="form-check-label " for="flexRadioDefault2">
-                                        Ya me encuentro en viaje
-                                      </label>
-                                    </div>
-                                  </div>
-                                      <div class="canalYT" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                                        <div class="btnYTPrp">
-                                            <input class="btnYT" type="submit" value="Solicitar Cotización">
-                                            </input>
-                                        </div>
-                                    </div>
-                                      </div>
-                                  </form>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+          <form action="" class="formCot">
+                <input type="email"  placeholder="Email:" required>
+                <input type="text"  placeholder="Nombre completo:" required>
+                <input type="text"  placeholder="Nacionalidad:" required>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento" required>
+                <input type="text"  placeholder="Edad cumplida:" required>
+                <input type="text"  placeholder="Teléfono de contacto (con código de área y país):" required>
+                <label for="fechaini">Fecha de inicio del viaje</label>
+                <input type="date" id="fechaini" required>
+                <label for="fechafin">Fecha de finalización del viaje</label>
+                <input type="date" id="fechafin" required>
+                <select required>
+                  <option selected>Que región o país visitará?</option>
+                  <option value="1">Europa</option>
+                  <option value="2">America del Norte</option>
+                  <option value="3">America del Sur</option>
+                  <option value="4">Asia / Africa / Oceania</option>
+                  <option value="5">Caribe</option>
+                  <option value="6">Turismo Interno(Solo para pasajeros argentinos)</option>
+                </select>
+                <select required>
+                  <option selected>Que tipo de viaje realizará?</option>
+                  <option value="1">Visa Estudiantil</option>
+                  <option value="2">Visa Work and Holiday</option>
+                  <option value="3">Vacaciones (menos de 90 días)</option>
+                  <option value="4">Vacaiones (menos de 30 días)</option>
+                  <option value="5">Expatriación (Radicación definitiva fuera de su país de origen)</option>
+                </select>
+              <div class="formR" >
+                <h5>Situación actual?</h5>
+                <div class="radio">
+                  <label for="flexRadioDefault1">
+                    Viajo desde mi país de origen
+                  </label>
+                  <input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                </div>
+                <div class="radio">
+                  <label for="flexRadioDefault2">
+                    Ya me encuentro en viaje
+                  </label>
+                  <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked >
+                </div>
               </div>
+              <div class="canalYT" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                <div class="btnYTPrp">
+                  <input class="btnYT" type="submit" value="Solicitar Cotización">
+                  </input>
+                </div>
+              </div>
+            </div>
+          </form>
           </div>
-          
-      </div>    
-        </div>
+      </div>
     </main>
     <aside></aside>
-    <footer style="height:auto">
-        <div class="container d-flex justify-content-evenly align-items-center">
-            <div class="hst2"></div>
-            <div class="iconRS">
-                <a href="https://www.instagram.com/lachica.delseguro/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/lachicadelseguro" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.youtube.com/channel/UCWMN85pySeJnhBZphdOTRWw" target="_blank"><i class="fab fa-youtube"></i></a>
-            </div>
-            <div class="hst">
-                <p class="m-0 d-flex justify-content-start align-items-center col-12" style="color: rgb(124, 123, 123);">#LaChicadelSeguro #TribuSegura</p>
-                <p class="m-0 d-flex justify-content-start align-items-center col-12" style="color: rgb(124, 123, 123);">#ConcienciaAseguradora</p>
-            </div>
-        </div>
-        <div class="develop">
-            <p class="m-0">Diseñada por <a href="https://github.com/Ice-Developer">Ice Developer</a> | Copyright © 2022 La chica del seguro</p>
-        </div>
-    </footer>
+    <footer>
+      <div class="rS">
+          <div class="hst2"></div>
+          <div class="iconRS">
+              <a href="https://www.instagram.com/lachica.delseguro/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/lachicadelseguro" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/channel/UCWMN85pySeJnhBZphdOTRWw" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="hst">
+              <p>#LaChicadelSeguro #TribuSegura</p>
+              <p>#ConcienciaAseguradora</p>
+          </div>
+      </div>
+      <div class="develop">
+          <p>Diseñada por <a href="https://github.com/Ice-Developer">Ice Developer</a> | Copyright © 2022 La chica del seguro</p>
+      </div>
+  </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

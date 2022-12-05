@@ -7,20 +7,44 @@
     color: rgb(248, 248, 248);
     font-family: raleway; 
     top: 80px;
-    z-index: 1;  
+    z-index: 1;
+        @media (max-width:1300px){
+            background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(/assets/img/20200325-Oficina.jpg);
+        }
+
+    .textoSaludo1{
+        padding-inline: 100px;
+        text-align: left;
+        font-size: 120%;
+        padding-top: 150px;
+        line-height: 40px;
+        @media (max-width:1300px){
+            padding-top: 120px;
+        }
+        @media (max-width:800px){
+            padding-left: 70px;
+        }
+        @media (max-width:800px){
+            padding-left: 70px;
+            font-size: 100%;
+
+        }
+    } 
+    .textoSaludo2{
+        padding-inline: 100px;
+        text-align: left;
+        font-size: 120%;
+        @media (max-width:800px){
+            padding-left: 70px;
+            font-size: 100%;
+        }
+    }
+    strong{    
+        font-size: 160%;
+        @media (max-width:800px){
+            font-size: 140%;
+        }
+    }
 }
-.textoSaludo1{
-    padding-inline: 100px;
-    text-align: left;
-    font-size: 120%;
-    padding-top: 150px;
-    line-height: 40px;
-}
-.textoSaludo2{
-    padding-inline: 100px;
-    text-align: left;
-    font-size: 120%;
-}
-strong{    
-    font-size: 160%;
-}
+
+

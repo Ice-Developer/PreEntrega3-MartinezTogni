@@ -1,0 +1,55 @@
+@import "var";
+
+.formCot{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: raleway;
+    color: white;
+    justify-content: left;
+    align-items: initial;
+    padding:10px;
+    input{
+        @include inputCont (40px, 10px);
+        width: 100%; 
+        color:$azul;       
+    }
+    select{
+        @include inputCont (50px, 10px);
+        width: 100%; 
+        font-weight:bold;
+        color: $azul;
+
+    }
+    option{
+        @include inputCont (auto, 0px);
+        width: 100%; 
+        
+    }
+    .formR{
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        color: $azul;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 20px;
+        justify-content: center;
+        align-items: initial;
+        h5{
+            font-weight: bold;
+        }
+        .radio{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-weight: bold;
+            input{
+                width: 30px;
+                height: 30px;
+                margin: 10px;
+            }
+        }
+    }
+}

@@ -4,79 +4,91 @@
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    flex-flow: row wrap;
+    flex-flow: row;
     position: fixed;
-    z-index: 12;       
-}
-.nombreEmpresa{
-    display: flex;
-    align-items: center;
-    background-color: #14446b;
-    height: 80px;
-    font-family: raleway;
-    font-weight: 600;
-    color: white;
-    font-size: 36px;
-    padding-left: 30px;
-    margin: 0;
-}
-.navegador ul{
-    display: flex;
-    padding-right: 30px;    
-}
-.navegador ul li{
-    font-family: raleway;
-    font-size: 13px;
-    list-style: none;
-}
-.navegador ul li a{
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-.navegador ul li a:hover{
-    color: rgb(218,184,178);
-    transition-duration: 1s;
-    transition-delay: 0.03s;
-}
-.fa-bars{
-    color: white;
-    font-size: 30px ;
-    visibility: hidden;   
-}
-@media (max-width:1200px) {
-    .navegador ul{
-        position:fixed;
-        top: -160px;
-        flex-direction: column;
-        background-color:#14446b;
-        height: auto;
-        width: 100%;
-        gap: 10px;
-        padding: 10px;
-        transition: 1.5s;
-        z-index: -1;    
+    z-index: 12; 
+    ul{
+        display: flex;
+        padding-right: 30px;
+        margin:0;
+        @media (max-width:1100px){
+            padding-right: 10px;
+        }
+        @media (max-width:800px) {
+                position:fixed;
+                top: -160px;
+                flex-direction: column;
+                background-color:#14446b;
+                height: 150px;
+                width: 100%;
+                gap: 10px;
+                padding: 10px;
+                transition: 1.5s;
+                transition-delay: 0.3s;
+                z-index: -1;  
+                &:hover{
+                    top: 80px;
+                }  
+            }    
+        li{
+            font-family: raleway;
+            font-size: 13px;
+            list-style: none;
+            a{  
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                padding: 10px;
+                    &:hover{
+                        color: rgb(218,184,178);
+                        transition-duration: 1s;
+                        transition-delay: 0.03s;
+                }
+                @media (max-width:1100px){
+                    padding: 5px;
+                }
+                @media (max-width:800px){
+                    transition-duration: 0.5s;
+                    justify-content: start;
+                    padding: 0;
+                }
+            }
+        }        
     }
-    .navegador ul li a{
-        transition-duration: 0.5s;
+    .nombreEmpresa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #14446b;
+        height: 80px;
+        font-family: raleway;
+        font-weight: 600;
+        color: white;
+        font-size: 36px;
+        padding-left: 30px;
+        margin: 0;
+        @media (max-width:1100px){
+            font-size: 30px;
+            padding-left: 15px;
+        }
     }
     .fa-bars{
-        visibility: visible; 
-        padding-right: 50px; 
-    }
-    .fa-bars:hover + ul{
-        top: 80px;    
-    }
-    .fa-bars:hover + ul li a{
-        transition-delay: 0.8s;
         color: white;
-    }
-    .navegador ul:hover{
-        top: 80px;
-    }
-    .navegador ul li a:hover{
-        color: rgb(218,184,178);
-        transition-duration: 1s;
-        transition-delay: 0.03s;
-    }
+        font-size: 30px ;
+        visibility: hidden; 
+        @media (max-width:800px){
+            visibility: visible; 
+            padding-right: 50px;
+            &:hover + ul{
+                top: 80px;
+            }
+            &:hover + ul li a{
+                transition-delay: 0.8s;
+                color: white;
+            }
+        }  
+    }      
 }

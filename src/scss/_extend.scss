@@ -40,3 +40,28 @@
     height: inherit;
 }
 
+%tarjSld{
+    width: 280px;
+    height: 350px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    @media(max-width:800px){
+        width: 600px !important;
+        height: 150px !important;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p:nth-child(1){
+        font-size: 700%;
+        padding-bottom: 20px;
+        @media(max-width:800px){
+            padding-right: 20px;
+        }
+}
+}

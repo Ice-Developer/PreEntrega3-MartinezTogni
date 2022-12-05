@@ -6,34 +6,36 @@
     align-content: center;
     padding: 25px 5px 0px 5px;
     gap: 10px;
+    .sobreMi{
+        width: 50%;  
+    }
+    .ceo1Text{
+        padding: 10px;
+        width:50%;
+        font-family: raleway;
+        .ceo1Text1{
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(20, 68, 107);
+            line-height: 50px;   
+        }
+        .ceo1Text2{
+            font-weight: 600;
+            line-height: 50px;
+        }
+        .ceo1Text3{
+            width:90%;
+            margin-bottom: 15px;
+        }
+        mark{
+            color: rgb(20, 68, 107);
+            background-color:white;
+            font-weight: 800;
+        }
+    }
+    
 }
-.sobreMi{
-    width: 50%;  
-}
-.ceo1Text{
-    padding: 10px;
-    width:50%;
-    font-family: raleway;
-}
-.ceo1Text1{
-    font-size: 30px;
-    font-weight: bolder;
-    color: rgb(20, 68, 107);
-    line-height: 50px;   
-}
-.ceo1Text2{
-    font-weight: 600;
-    line-height: 50px;
-}
-.ceo1Text3{
-    width:90%;
-    margin-bottom: 15px;
-}
-mark{
-    color: rgb(20, 68, 107);
-    background-color:white;
-    font-weight: 800;
-}
+
 .ceo2{
     width: 100%;
     display: flex;
@@ -42,32 +44,32 @@ mark{
     align-content: center;
     padding: 0px 25px 25px 10px;
     gap: 10px;
-}
-.ceo2Text{
-    width:50%;
-    font-family: raleway;
-    padding-left: 15px;
-}
-.ceo2Text1{
-    font-size: 30px;
-    font-weight: bolder;
-    color: rgb(20, 68, 107);
-    line-height: 50px;
-    margin-bottom: 10px;
-}
-.ceo2Text2{
-    margin-bottom: 20px;
-}
-.ceo2Text3{
-    margin-bottom: 20px;
-}
-.ceo2Text4{
-    color: rgb(20, 68, 107);
-    font-weight: bolder;
-    font-size: 20px;
-}
-.imgCeo2{
-    width: 50%;
-    padding-right: 15px;
-    margin-bottom: 30px;
+    .ceo2Text{
+        width:50%;
+        font-family: raleway;
+        padding-left: 15px;
+        .ceo2Text1{
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(20, 68, 107);
+            line-height: 50px;
+            margin-bottom: 10px;
+        }
+        .ceo2Text2{
+            margin-bottom: 20px;
+        }
+        .ceo2Text3{
+            margin-bottom: 20px;
+        }
+        .ceo2Text4{
+            color: rgb(20, 68, 107);
+            font-weight: bolder;
+            font-size: 20px;
+        }    
+    }
+    .imgCeo2{
+        width: 50%;
+        padding-right: 15px;
+        margin-bottom: 30px;
+    }    
 }
