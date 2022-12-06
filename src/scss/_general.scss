@@ -9,6 +9,7 @@
     src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
 body{
+    height: 100vh;
     display: grid;
     grid-template-rows: repeat(4fr auto);
     grid-template-areas:"nav"

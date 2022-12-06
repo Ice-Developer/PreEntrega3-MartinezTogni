@@ -9,7 +9,7 @@
     justify-content: left;
     align-items: initial;
     padding:10px;
-    input{
+    .inp{
         @include inputCont (40px, 10px);
         width: 100%; 
         color:$azul;       
@@ -26,9 +26,11 @@
         width: 100%; 
         
     }
+    
     .formR{
         background-color: white;
         border: none;
+        margin-bottom: 10px;
         border-radius: 30px;
         color: $azul;
         font-weight: bold;
@@ -46,10 +48,12 @@
             justify-content: left;
             font-weight: bold;
             input{
-                width: 30px;
-                height: 30px;
-                margin: 10px;
+                width: 20px;
+                height: 20px;
+                margin: 0;
+                margin-left: 15px;
             }
         }
+    
     }
 }

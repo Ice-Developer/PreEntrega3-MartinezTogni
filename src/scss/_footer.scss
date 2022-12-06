@@ -8,6 +8,7 @@ footer{
     border-top: 4px #14446b solid;
     justify-content: center;
     align-items: center;
+    margin: 0;
     .hst2{
         width: 252px;
     }
@@ -15,6 +16,7 @@ footer{
         width: 100%;
         display: flex;
         justify-content: space-around;
+        margin: 0;
     }
     .iconRS{
         display: flex;
@@ -62,7 +64,13 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;    
+        align-items: center; 
+        width: 252px;
+        p{
+            margin:0;
+            height: min-content;
+            font-size: 12px;
+        }   
     }
     .develop{
         display: flex;
@@ -72,6 +80,9 @@ footer{
             a{
                 text-decoration: none;
                 color: rgb(124, 123, 123);
+            }
+            p{
+                margin: 0;
             }
     }
 }

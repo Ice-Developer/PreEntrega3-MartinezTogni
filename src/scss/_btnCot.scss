@@ -1,0 +1,7 @@
+.btnCTPrp{
+    @include btnPropFx(flex, center, center, 100%);
+    .btnCT {
+        @include btnFx(16px, 40px);
+        
+    }
+}

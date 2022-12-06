@@ -2,57 +2,16 @@
     display: flex;
     justify-content: left;
     justify-items: center;
+    width: 50%;
     padding: 15px 0px 0px 150px;
 }
 .btnYTPrp{
+    @include btnPropFx(inline, left, center, auto);
     text-align: center;
     padding: 20px;
-    margin: 10px;
-    a{
-        text-decoration: none;
-        color: white;
-        padding: 20px 40px;
-        margin: 20px;
-    }
-    & a:hover{
-        background-position: 100% 0;
-        transition: all .8s ease-in-out;
-        color: #14446b;
-    }
-    input{
-        text-decoration: none;
-        color: white;
-        padding: 20px 40px;
-        margin: 20px;
-    }
-    & input:hover{
-        background-position: 100% 0;
-        transition: all .8s ease-in-out;
-        color: #14446b;
-    }
+    
     .btnYT {
-        background-image: linear-gradient(to right, #14446b, #7d4b8a, #db9fd1, #dab8b2);
-        box-shadow: 0 4px 15px 0 rgba(164, 123, 202, 0.75);
-        font-family: raleway;
-        width: auto;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        cursor: pointer;
-        margin: 10px;
-        height: 70px;
-        text-align:center;
-        border: none;
-        background-size:300% 100%;
-        border-radius: 50px;
-        transition: all .8s ease-in-out;
-        & :hover {
-            background-position: 100% 0;
-            transition: all .8s ease-in-out;
-        }
-        & :focus {
-            outline: none;
-        }
+        @include btnFx(16px, 70px);
     }
 }
 

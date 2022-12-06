@@ -9,6 +9,7 @@
   src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
 body {
+  height: 100vh;
   display: grid;
   grid-template-rows: repeat(4fr auto);
   grid-template-areas: "nav" "header" "main" "footer";
@@ -249,6 +250,9 @@ footer {
   box-shadow: 0px 0px 15px rgba(119, 118, 118, 0.315);
   box-shadow: 0px 0px 20px 6px rgba(204, 204, 204, 0.308);
   padding: 0px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ceo1 {
@@ -427,7 +431,7 @@ footer {
     padding: 10px;
   }
 }
-.tituloMultimedia {
+.sld {
   width: 80%;
   font-family: raleway;
   color: white;
@@ -437,14 +441,14 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-.tituloMultimedia h2 {
+.sld h2 {
   padding-bottom: 15px;
 }
-.tituloMultimedia p {
+.sld p {
   font-size: 70%;
 }
 @media (max-width: 800px) {
-  .tituloMultimedia p {
+  .sld p {
     font-size: 50%;
     padding-bottom: 10px;
   }
@@ -472,19 +476,24 @@ footer {
   display: flex;
   justify-content: left;
   justify-items: center;
+  width: 50%;
   padding: 15px 0px 0px 150px;
 }
 
 .btnYTPrp {
+  display: inline;
+  justify-content: left;
+  align-items: center;
   text-align: center;
   padding: 20px;
-  margin: 10px;
+  width: auto;
+  text-align: center;
+  padding: 20px;
 }
 .btnYTPrp a {
   text-decoration: none;
   color: white;
   padding: 20px 40px;
-  margin: 20px;
 }
 .btnYTPrp a:hover {
   background-position: 100% 0;
@@ -494,8 +503,6 @@ footer {
 .btnYTPrp input {
   text-decoration: none;
   color: white;
-  padding: 20px 40px;
-  margin: 20px;
 }
 .btnYTPrp input:hover {
   background-position: 100% 0;
@@ -506,12 +513,13 @@ footer {
   background-image: linear-gradient(to right, #14446b, #7d4b8a, #db9fd1, #dab8b2);
   box-shadow: 0 4px 15px 0 rgba(164, 123, 202, 0.75);
   font-family: raleway;
-  width: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: white;
   cursor: pointer;
-  margin: 10px;
   height: 70px;
   text-align: center;
   border: none;
@@ -519,11 +527,11 @@ footer {
   border-radius: 50px;
   transition: all 0.8s ease-in-out;
 }
-.btnYTPrp .btnYT :hover {
+.btnYTPrp .btnYT:hover {
   background-position: 100% 0;
   transition: all 0.8s ease-in-out;
 }
-.btnYTPrp .btnYT :focus {
+.btnYTPrp .btnYT:focus {
   outline: none;
 }
 
@@ -537,6 +545,7 @@ footer {
   border-top: 4px #14446b solid;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 footer .hst2 {
   width: 252px;
@@ -545,6 +554,7 @@ footer .rS {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin: 0;
 }
 footer .iconRS {
   display: flex;
@@ -594,6 +604,14 @@ footer .hst {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 252px;
+}
+footer .hst p {
+  margin: 0;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  font-size: 12px;
 }
 footer .develop {
   display: flex;
@@ -604,6 +622,9 @@ footer .develop {
 footer .develop a {
   text-decoration: none;
   color: rgb(124, 123, 123);
+}
+footer .develop p {
+  margin: 0;
 }
 
 .backCt {
@@ -719,14 +740,12 @@ posterior animacion con JS-
   transition: 1s 0.3s;
   background-image: linear-gradient(45deg, #dab8b2 0%, rgb(148, 101, 146) 45%, rgb(218, 184, 178) 100%);
 }
-
 .formCt button:hover {
   width: 400px;
   color: #14446b;
   transition: 1s;
   background-image: linear-gradient(45deg, #dab8b2 0%, rgb(148, 101, 146) 45%, rgb(218, 184, 178) 100%);
 }
-
 .formCt button .fa-paper-plane:nth-child(1) {
   padding: 10px;
   padding-right: 0;
@@ -734,14 +753,12 @@ posterior animacion con JS-
   transform: translatex(0px);
   transition-duration: 1s;
 }
-
-.formCt button:hover .fa-paper-plane:nth-child(1) {
+.formCt button .fa-paper-plane:nth-child(1) button:hover {
   transform: translatex(-120px);
   transition-duration: 1s;
   transition-delay: 0.5s;
   color: #14446b;
 }
-
 .formCt button .fa-paper-plane:nth-child(2) {
   padding: 10px;
   padding-right: 0;
@@ -749,8 +766,7 @@ posterior animacion con JS-
   transform: translatex(0px);
   transition-duration: 1s;
 }
-
-.formCt button:hover .fa-paper-plane:nth-child(2) {
+.formCt button .fa-paper-plane:nth-child(2) button:hover {
   transform: translatex(120px);
   transition-duration: 1s;
   transition-delay: 0.5s;
@@ -776,7 +792,7 @@ posterior animacion con JS-
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   color: white;
   font-family: raleway;
   margin-top: 40px;
@@ -801,7 +817,7 @@ posterior animacion con JS-
   align-items: initial;
   padding: 10px;
 }
-.formCot input {
+.formCot .inp {
   height: 40px;
   margin-bottom: 10px;
   width: 400px;
@@ -843,6 +859,7 @@ posterior animacion con JS-
 .formCot .formR {
   background-color: white;
   border: none;
+  margin-bottom: 10px;
   border-radius: 30px;
   color: #14446b;
   font-weight: bold;
@@ -862,7 +879,85 @@ posterior animacion con JS-
   font-weight: bold;
 }
 .formCot .formR .radio input {
-  width: 30px;
-  height: 30px;
-  margin: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.btnCTPrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+.btnCTPrp a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 40px;
+}
+.btnCTPrp a:hover {
+  background-position: 100% 0;
+  transition: all 0.8s ease-in-out;
+  color: #14446b;
+}
+.btnCTPrp input {
+  text-decoration: none;
+  color: white;
+}
+.btnCTPrp input:hover {
+  background-position: 100% 0;
+  transition: all 0.8s ease-in-out;
+  color: #14446b;
+}
+.btnCTPrp .btnCT {
+  background-image: linear-gradient(to right, #14446b, #7d4b8a, #db9fd1, #dab8b2);
+  box-shadow: 0 4px 15px 0 rgba(164, 123, 202, 0.75);
+  font-family: raleway;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.8s ease-in-out;
+}
+.btnCTPrp .btnCT:hover {
+  background-position: 100% 0;
+  transition: all 0.8s ease-in-out;
+}
+.btnCTPrp .btnCT:focus {
+  outline: none;
+}
+
+.servPers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  width: 100%;
+}
+.servPers .cardServ {
+  font-family: raleway;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border: 2px solid #14446b;
+  height: 100%;
+}
+.servPers .cardServ h5 {
+  padding: 10px;
+}
+.servPers .cardServ p {
+  padding: 10px;
+  height: 140px;
 }
