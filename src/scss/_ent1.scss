@@ -1,6 +1,7 @@
-.entrevista1{
-    grid-area: entrevista1;
-    @extend %entrevistaVideo;
+@import "mixins";
+
+.entrevista1{    
+    @include entrevistaVideo(entrevista1);
     .reproductor1{
         @extend %reproductor;
         img{

@@ -1,0 +1,6 @@
+@import "mixins";
+
+.sldCont{
+    @include sld(70px, 30px);
+
+}

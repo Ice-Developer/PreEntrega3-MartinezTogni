@@ -1,4 +1,3 @@
 .entrevista2{
-    grid-area: entrevista2;
-    @extend %entrevistaAudio;
+    @include entrevistaAudio (entrevista2)
 }

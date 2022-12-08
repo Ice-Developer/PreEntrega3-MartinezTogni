@@ -1,0 +1,27 @@
+@import "mixins";
+
+.sldMedios{
+    @include sld(80px, 0px);
+
+}
+.sldCont{
+    @include sld(70px, 30px);
+
+}
+.sldCot{
+    @include sld(40px, 40px);
+
+}
+.sldSer{
+    @include sld(80px, 40px);
+    justify-content: left;
+    .pSldSer{
+        display: flex;
+        width: 100%;
+        justify-content: left;
+        margin-bottom: 0px;
+        @media(max-width: 800px){
+            font-size:100%;
+        }
+    }
+}

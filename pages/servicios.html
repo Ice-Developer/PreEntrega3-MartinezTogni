@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Chica del Seguro - Cotiza tu Seguro</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">   
-  </head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 <body>
-  <nav class="navegador">
-    <p class="nombreEmpresa">La Chica del Seguro</p>
-    <i class="fa-solid fa-bars"></i>
+    <nav class="navegador">
+        <p class="nombreEmpresa">La Chica del Seguro</p>
+        <i class="fa-solid fa-bars"></i>
         <ul>
-            <li><a href="../index.html" >Inicio</a></li>
-            <li><a href="../pages/academia.html">Academia de Asesores</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/academia.html">La Academia</a></li>
             <li><a href="../pages/cotizaciones.html">Cotiza tu Seguro</a></li>
             <li><a href="../pages/servicios.html">Serv Personalizados</a></li>
             <li><a href="../pages/medios.html">Mica en los Medios</a></li>
             <li><a href="../pages/contactos.html">Contacto</a></li>
         </ul>
-</nav>
+    </nav>
     <header>
     </header>
-    <main >
+    <main>
         <div class="principal">
-            <div class="sld" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
-                <h2>Un Servicio personalizado </h2>
+            <div class="sldSer" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
+                <h2>Mi Servicio personalizado </h2>
                 <p>a solo un click de distancia</p>
             </div>
-            <div class="bkgBlanco">  
-            <div class="servPers">
-            <div class="cardServ" >
-                <img src="../assets/img/Mesa-de-trabajo.jpg" class="card-img-top p-2" alt="...">
-                <div class="cardServText">
-                    <h5>REVISION DE POLIZAS</h5>
-                    <p >Ya contrataste un Seguro pero tenes dudas? ¡Esto es para vos! Voy a revisar tus coberturas y a contarte en detalle si estas bien cubierto, si necesitas realizar actualizaciones y qué nuevas oportunidades podes aprovechar.</p>
-                    <a href="../pages/revision_poliza.html" class="btn btn-primary d-grid col-4 ">Ver mas</a>
-                </div>
-            </div>
-            <div class="cardServ">
-                <img src="../assets/img/asesoria_pers.jpg" class="card-img-top p-2" alt="...">
-                <div class="cardServText">
-                    <h5>ASESORÍA INDIVIDUAL</h5>
-                    <p>Somos únicos e irrepetibles en este planeta, y nuestros proyectos también lo son. Protege tus ingresos, cumple tus objetivos y potencia tu actividad con un plan a TU medida. Una cita juntos basta para planificar una estrategia que te permita protegerte, ahorrar e invertir al mismo tiempo. Deja de perder el tiempo, que empiece a jugar a tu favor!</p>
-                    <a href="../pages/asesoria_individual.html" class="btn btn-primary d-grid col-4" >Ver mas</a>
+            <div class="bkgBlanco">
+                <div class="servPers" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="350">
+                    <div class="cardServ">
+                        <img src="../assets/img/Mesa-de-trabajo.jpg" class="cardImg" alt="...">
+                        <h5 class="tsp">REVISION DE POLIZAS</h5>
+                        <p class="psp">Ya contrataste un Seguro pero tenes dudas? ¡Esto es para vos! Voy a revisar tus
+                            coberturas y a contarte en detalle si estas bien cubierto, si necesitas realizar
+                            actualizaciones y qué nuevas oportunidades podes aprovechar.</p>
+                        <div class="btnspProp">
+                            <a class="btnsp" href="../pages/revision_poliza.html"
+                                class="btn btn-primary d-grid col-4 ">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="cardServ">
+                        <img src="../assets/img/asesoria_pers.jpg" class="cardImg" alt="...">
+                        <h5 class="tsp">ASESORÍA INDIVIDUAL</h5>
+                        <p class="psp">Somos únicos e irrepetibles en este planeta, y nuestros proyectos también lo son.
+                            Protege tus ingresos, cumple tus objetivos y potencia tu actividad con un plan a TU medida.
+                            Una cita juntos basta para planificar una estrategia que te permita protegerte, ahorrar e
+                            invertir al mismo tiempo. Deja de perder el tiempo, que empiece a jugar a tu favor!</p>
+                        <div class="btnspProp">
+                            <a class="btnsp" href="../pages/asesoria_individual.html"
+                                class="btn btn-primary d-grid col-4">Ver más</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         </div>
-      </div>
     </main>
     <aside></aside>
     <footer>
-      <div class="rS">
-          <div class="hst2"></div>
-          <div class="iconRS">
-              <a href="https://www.instagram.com/lachica.delseguro/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/lachicadelseguro" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://www.youtube.com/channel/UCWMN85pySeJnhBZphdOTRWw" target="_blank"><i class="fab fa-youtube"></i></a>
-          </div>
-          <div class="hst">
-              <p>#LaChicadelSeguro #TribuSegura</p>
-              <p>#ConcienciaAseguradora</p>
-          </div>
-      </div>
-      <div class="develop">
-          <p>Diseñada por <a href="https://github.com/Ice-Developer">Ice Developer</a> | Copyright © 2022 La chica del seguro</p>
-      </div>
-  </footer>
+        <div class="rS">
+            <div class="hst2"></div>
+            <div class="iconRS">
+                <a href="https://www.instagram.com/lachica.delseguro/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/lachicadelseguro" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/channel/UCWMN85pySeJnhBZphdOTRWw" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <div class="hst">
+                <p>#LaChicadelSeguro #TribuSegura</p>
+                <p>#ConcienciaAseguradora</p>
+            </div>
+        </div>
+        <div class="develop">
+            <p>Diseñada por <a href="https://github.com/Ice-Developer">Ice Developer</a> | Copyright © 2022 La chica del
+                seguro</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once:true
+        });
+    </script>
 </body>
+
 </html>

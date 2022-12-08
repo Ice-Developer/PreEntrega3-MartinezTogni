@@ -1,6 +1,5 @@
 .entrevista4{
-    grid-area: entrevista4;
-    @extend %entrevistaVideo;
+    @include entrevistaVideo(entrevista4);
     .reproductor4{
         @extend %reproductor;
         img{

@@ -1,4 +1,7 @@
 .entrevista5{
-    grid-area: entrevista5;
-    @extend %entrevistaAudio;
+    @include entrevistaAudio (entrevista5);
+    margin: 20px;
+        @media(max-width:1300px){
+            margin-bottom: 10px;
+        }
 }

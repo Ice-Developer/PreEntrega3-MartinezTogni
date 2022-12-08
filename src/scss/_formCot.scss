@@ -9,6 +9,7 @@
     justify-content: left;
     align-items: initial;
     padding:10px;
+    width: 50%;
     .inp{
         @include inputCont (40px, 10px);
         width: 100%; 
@@ -55,5 +56,9 @@
             }
         }
     
+    }
+    textarea{
+        @include inputCont (220px, 10px);
+        width:100%
     }
 }
