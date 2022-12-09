@@ -598,6 +598,68 @@ footer {
   }
 }
 
+.sldAcad {
+  width: 80%;
+  font-family: raleway;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+}
+.sldAcad h2 {
+  font-weight: bolder;
+  font-size: 48px;
+}
+.sldAcad p {
+  font-size: 22.4px;
+  margin: 0;
+}
+@media (max-width: 800px) {
+  .sldAcad p {
+    font-size: 100%;
+    padding-bottom: 10px;
+  }
+}
+.sldAcad .pSldSer {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  margin-bottom: 0px;
+}
+@media (max-width: 800px) {
+  .sldAcad .pSldSer {
+    font-size: 100%;
+  }
+}
+
+.sldCont {
+  width: 80%;
+  font-family: raleway;
+  color: white;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sldCont h2 {
+  font-weight: bolder;
+  font-size: 48px;
+}
+.sldCont p {
+  font-size: 22.4px;
+  margin: 0;
+}
+@media (max-width: 800px) {
+  .sldCont p {
+    font-size: 100%;
+    padding-bottom: 10px;
+  }
+}
+
 .entrevista1 {
   grid-area: entrevista1;
   display: flex;
@@ -649,8 +711,7 @@ footer {
   width: 100%;
   padding: 15px 0px 0px 150px;
 }
-
-.btnYTPrp {
+.youTube .btnYTPrp {
   display: inline;
   justify-content: left;
   align-items: center;
@@ -660,26 +721,26 @@ footer {
   text-align: center;
   padding: 20px;
 }
-.btnYTPrp a {
+.youTube .btnYTPrp a {
   text-decoration: none;
   color: white;
   padding: 20px 40px;
 }
-.btnYTPrp a:hover {
+.youTube .btnYTPrp a:hover {
   background-position: 100% 0;
   transition: all 0.8s ease-in-out;
   color: #14446b;
 }
-.btnYTPrp input {
+.youTube .btnYTPrp input {
   text-decoration: none;
   color: white;
 }
-.btnYTPrp input:hover {
+.youTube .btnYTPrp input:hover {
   background-position: 100% 0;
   transition: all 0.8s ease-in-out;
   color: #14446b;
 }
-.btnYTPrp .btnYT {
+.youTube .btnYTPrp .btnYT {
   background-image: linear-gradient(to right, #14446b, #7d4b8a, #db9fd1, #dab8b2);
   box-shadow: 0 4px 15px 0 rgba(164, 123, 202, 0.75);
   font-family: raleway;
@@ -697,17 +758,18 @@ footer {
   border-radius: 50px;
   transition: all 0.8s ease-in-out;
 }
-.btnYTPrp .btnYT:hover {
+.youTube .btnYTPrp .btnYT:hover {
   background-position: 100% 0;
   transition: all 0.8s ease-in-out;
 }
-.btnYTPrp .btnYT:focus {
+.youTube .btnYTPrp .btnYT:focus {
   outline: none;
 }
 
 footer {
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: rgb(51, 50, 50);
   height: 90px;
   color: rgb(124, 123, 123);
@@ -823,36 +885,33 @@ footer .develop p {
     width: 80%;
   }
 }
-
-.imgCt {
+.formComp .imgCt {
   width: 50%;
+  /* se comenta este fragmento dado que esta imagen se usara para una 
+  posterior animacion con JS- 
+
+  .imgVentanaCt{
+      background-image: url(../img/ventana_edit.jpg);
+      background-size:cover;
+      width: 100%;
+      height: 600px;
+      z-index: 49;
+      position: absolute;
+  }
+  */
 }
 @media (max-width: 800px) {
-  .imgCt {
+  .formComp .imgCt {
     display: none !important;
   }
 }
-
-/* se comenta este fragmento dado que esta imagen se usara para una 
-posterior animacion con JS- 
-
-.imgVentanaCt{
-    background-image: url(../img/ventana_edit.jpg);
-    background-size:cover;
-    width: 100%;
-    height: 600px;
-    z-index: 49;
-    position: absolute;
-}
-*/
-.imgSaludoCt {
+.formComp .imgCt .imgSaludoCt {
   background-image: url(../img/img_saludo_cont.jpg);
   background-size: cover;
   width: 100%;
   height: 600px;
 }
-
-.formCt {
+.formComp .formCt {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -863,12 +922,11 @@ posterior animacion con JS-
   align-items: center;
 }
 @media (max-width: 800px) {
-  .formCt {
+  .formComp .formCt {
     width: 100%;
   }
 }
-
-.formCt textarea {
+.formComp .formCt textarea {
   height: 220px;
   margin-bottom: 10px;
   width: 400px;
@@ -879,8 +937,7 @@ posterior animacion con JS-
   border: none;
   outline: none;
 }
-
-.formCt input {
+.formComp .formCt input {
   height: 50px;
   margin-bottom: 0;
   width: 400px;
@@ -6112,29 +6169,30 @@ progress {
     display: none !important;
   }
 }
-.sldCont {
-  width: 80%;
-  font-family: raleway;
-  color: white;
-  margin-top: 70px;
-  margin-bottom: 30px;
+.banner {
+  margin-top: 80px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 40px;
+  font-family: raleway;
+  font-size: 18px;
+  background-color: #da73e4;
 }
-.sldCont h2 {
-  font-weight: bolder;
-  font-size: 48px;
-}
-.sldCont p {
-  font-size: 22.4px;
+.banner p {
+  padding-right: 10px;
+  color: #14446b;
+  font-weight: bold;
   margin: 0;
 }
-@media (max-width: 800px) {
-  .sldCont p {
-    font-size: 100%;
-    padding-bottom: 10px;
-  }
+.banner a {
+  text-decoration: none;
+  color: #14446b;
+  font-weight: bold;
+}
+.banner i {
+  padding-left: 5px;
 }
 
 .aa {
@@ -6142,7 +6200,153 @@ progress {
   flex-direction: column;
   width: 90%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   font-family: raleway;
   color: #14446b;
+  margin: 10px;
+}
+@media (max-width: 800px) {
+  .aa {
+    width: 98%;
+    margin: 5px;
+  }
+}
+.aa .tProd {
+  margin-top: 10px;
+}
+.aa .tProd h2 {
+  margin: 0;
+  font-weight: bold;
+}
+.aa .prod {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px;
+}
+@media (max-width: 800px) {
+  .aa .prod {
+    flex-direction: row;
+    gap: 5px;
+  }
+}
+.aa .prod .tjProd {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border: 2px solid #14446b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  .aa .prod .tjProd {
+    flex-direction: column;
+    width: 300px !important;
+    height: 520px !important;
+  }
+}
+.aa .prod .tjProd .imgProd {
+  width: 300px;
+}
+.aa .prod .tjProd .descComp {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .aa .prod .tjProd .descComp {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+}
+.aa .prod .tjProd .descComp .desc {
+  padding: 15px;
+}
+@media (max-width: 1180px) {
+  .aa .prod .tjProd .descComp .desc {
+    padding: 0px 10px;
+  }
+}
+.aa .prod .tjProd .descComp .desc p {
+  margin: 0;
+}
+.aa .prod .tjProd .compra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 800px) {
+  .aa .prod .tjProd .compra {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aa .prod .tjProd .compra h3 {
+    padding: 10px;
+  }
+}
+.aa .prod .tjProd .compra .btnAcProp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: auto;
+  padding: 10px;
+}
+.aa .prod .tjProd .compra .btnAcProp a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 40px;
+}
+.aa .prod .tjProd .compra .btnAcProp a:hover {
+  background-position: 100% 0;
+  transition: all 0.8s ease-in-out;
+  color: #14446b;
+}
+.aa .prod .tjProd .compra .btnAcProp input {
+  text-decoration: none;
+  color: white;
+}
+.aa .prod .tjProd .compra .btnAcProp input:hover {
+  background-position: 100% 0;
+  transition: all 0.8s ease-in-out;
+  color: #14446b;
+}
+@media (max-width: 1180px) {
+  .aa .prod .tjProd .compra .btnAcProp {
+    padding: 0;
+  }
+}
+.aa .prod .tjProd .compra .btnAcProp .btnAc {
+  background-image: linear-gradient(to right, #14446b, #7d4b8a, #db9fd1, #dab8b2);
+  box-shadow: 0 4px 15px 0 rgba(164, 123, 202, 0.75);
+  font-family: raleway;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.8s ease-in-out;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  width: auto;
+}
+.aa .prod .tjProd .compra .btnAcProp .btnAc:hover {
+  background-position: 100% 0;
+  transition: all 0.8s ease-in-out;
+}
+.aa .prod .tjProd .compra .btnAcProp .btnAc:focus {
+  outline: none;
 }

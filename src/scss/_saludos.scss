@@ -25,3 +25,22 @@
         }
     }
 }
+.sldAcad{
+    @include sld(0px, 40px);
+    justify-content: left;
+    .pSldSer{
+        display: flex;
+        width: 100%;
+        justify-content: left;
+        margin-bottom: 0px;
+        @media(max-width: 800px){
+            font-size:100%;
+        }
+    }
+
+}
+
+.sldCont{
+    @include sld(70px, 30px);
+
+}

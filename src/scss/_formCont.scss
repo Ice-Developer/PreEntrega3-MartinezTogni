@@ -9,15 +9,12 @@
     @media (max-width:800px){
         width: 80%;
     }
-}
-.imgCt{
-    width: 50%;
-    @media (max-width:800px){
-        display: none !important;
-    }
-
-}
-/* se comenta este fragmento dado que esta imagen se usara para una 
+    .imgCt{
+        width: 50%;
+        @media (max-width:800px){
+            display: none !important;
+        }
+        /* se comenta este fragmento dado que esta imagen se usara para una 
 posterior animacion con JS- 
 
 .imgVentanaCt{
@@ -29,29 +26,35 @@ posterior animacion con JS-
     position: absolute;
 }
 */
-.imgSaludoCt{
-    background-image: url(../img/img_saludo_cont.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-}
-.formCt{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    background-color: #14446b;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    @media (max-width:800px){
-        width: 100%;
+        .imgSaludoCt{
+            background-image: url(../img/img_saludo_cont.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 600px;
+        }
+    }
+    .formCt{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        background-color: #14446b;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        @media (max-width:800px){
+            width: 100%;
+        }
+        textarea{
+            @include inputCont (220px, 10px)
+        }
+        input{
+            @include inputCont (50px, 0)
+        }        
     }
 }
-.formCt textarea{
-    @include inputCont (220px, 10px)
 
-}
-.formCt input{
-    @include inputCont (50px, 0)
-}
+
+
+
+

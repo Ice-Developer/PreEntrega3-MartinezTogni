@@ -6,17 +6,15 @@
 // Configuration
 @import "functions";
 @import "variables";
+@import "maps";
 @import "mixins";
 @import "utilities";
 
 // Layout & components
 @import "root";
 @import "reboot";
-
 @import "transitions";
-
 @import "carousel";
-
 
 // Helpers
 @import "helpers";
