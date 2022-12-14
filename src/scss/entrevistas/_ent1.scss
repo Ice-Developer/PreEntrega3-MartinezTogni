@@ -1,5 +1,3 @@
-@import "mixins";
-
 .entrevista1{    
     @include entrevistaVideo(entrevista1);
     .reproductor1{

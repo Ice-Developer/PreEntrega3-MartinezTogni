@@ -1,4 +1,4 @@
-@import "mixins";
+@import "../generales/mixins";
 
 .sldMedios{
     @include sld(80px, 0px);
