@@ -10,6 +10,9 @@
     align-items: initial;
     padding:10px;
     width: 50%;
+    @media(max-width:950px){
+        width: 80%;
+    }
     .inp{
         @include inputCont (40px, 10px);
         width: 100%; 

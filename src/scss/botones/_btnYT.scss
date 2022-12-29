@@ -13,6 +13,14 @@
             @include btnFx(16px, 70px);
         }
     }
+        @media (max-width:1100px){
+            justify-content: left;
+            padding: 15px 0px 0px 80px;
+        }
+        @media (max-width:400px){
+            justify-content: left;
+            padding: 15px 0px 0px 40px;
+        }    
     
 }
 

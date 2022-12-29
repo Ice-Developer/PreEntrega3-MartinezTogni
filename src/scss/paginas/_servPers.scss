@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    padding-top: 10px;
+    padding: 20px 0px 20px 0px;
 
     
     .cardServ{
@@ -28,10 +28,15 @@
                 margin:0;
             }
             .psp{
-
                 padding: 10px;
                 height: 190px;
                 margin-bottom:10px;
+                @media(max-width:1000px){
+                height:250px;
+            }
+            @media(max-width:800px){
+                height:300px;
+            }
             }
     .btnspProp{
         @include btnPropFx(flex, center, center, auto);

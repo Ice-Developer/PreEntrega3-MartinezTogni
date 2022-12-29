@@ -4,20 +4,32 @@ footer{
     position: relative;
     background-color: rgb(51, 50, 50);
     height: 90px;
+    width: 100%;
     color: rgb(124, 123, 123);
     font-family: raleway;
     border-top: 4px #14446b solid;
     justify-content: center;
     align-items: center;
     margin: 0;
+
     .hst2{
         width: 252px;
+        @media (max-width:600px){
+            display: none;
+
+        }
+
     }
     .rS{
         width: 100%;
         display: flex;
         justify-content: space-around;
         margin: 0;
+        @media (max-width:600px){
+            justify-content: center;
+        }
+
+        
     }
     .iconRS{
         display: flex;
@@ -71,7 +83,10 @@ footer{
             margin:0;
             height: min-content;
             font-size: 12px;
-        }   
+        }
+        @media (max-width:600px){
+            display: none;
+        }
     }
     .develop{
         display: flex;

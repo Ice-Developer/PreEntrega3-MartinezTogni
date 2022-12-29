@@ -7,6 +7,9 @@
     flex-flow: row;
     position: fixed;
     z-index: 12; 
+    @media (max-width:400px) {
+        height: 100px;
+    }
     ul{
         display: flex;
         padding-right: 30px;
@@ -14,7 +17,7 @@
         @media (max-width:1100px){
             padding-right: 10px;
         }
-        @media (max-width:800px) {
+        @media (max-width:850px) {
                 position:fixed;
                 top: -160px;
                 flex-direction: column;
@@ -27,9 +30,15 @@
                 transition-delay: 0.3s;
                 z-index: -1;  
                 &:hover{
-                    top: 70px;
+                    top: 80px;
                 }  
-            }    
+            }
+            @media (max-width:400px){
+                &:hover {
+                    top: 100px;
+                }  
+            }            
+        
         li{
             font-family: raleway;
             font-size: 13px;
@@ -50,7 +59,7 @@
                 @media (max-width:1100px){
                     padding: 5px;
                 }
-                @media (max-width:800px){
+                @media (max-width:850px){
                     transition-duration: 0.5s;
                     justify-content: start;
                     padding: 0;
@@ -63,7 +72,7 @@
         align-items: center;
         justify-content: center;
         background-color: #14446b;
-        height: 80px;
+        height: 100%;
         font-family: raleway;
         font-weight: 600;
         color: white;
@@ -73,15 +82,16 @@
         @media (max-width:1100px){
             font-size: 30px;
             padding-left: 15px;
+            height: 100%;
         }
     }
     .fa-bars{
         color: white;
         font-size: 30px ;
         visibility: hidden; 
-        @media (max-width:800px){
+        @media (max-width:850px){
             visibility: visible; 
-            padding-right: 50px;
+            padding:0px 30px 0px 20px;
             &:hover + ul{
                 top: 80px;
             }
@@ -89,7 +99,12 @@
                 transition-delay: 0.8s;
                 color: white;
             }
-        }  
+        }
+        @media (max-width:400px){
+            &:hover + ul{
+                top: 100px;
+            }  
+        }       
     }      
 }
 .navegadorProd{

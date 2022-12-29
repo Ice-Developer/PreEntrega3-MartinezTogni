@@ -4,6 +4,10 @@
     font-size: 48px;
     font-weight: bolder;
     margin-bottom: 40px;
+    @media (max-width:400px){
+        text-align: center;
+        padding: 0px 10px 0px 10px;
+    }
 }
 .tarjetas{
     display: flex;
